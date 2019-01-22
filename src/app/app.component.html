@@ -17,5 +17,35 @@
     <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
   </li>
 </ul>
+<div>
+  <h1>Hotkeys</h1>
+  <ul>
+    <li>g g => alert "g g"</li>
+    <li>alt+d => alert "alt+d"</li>
+    <li>ctrl+d => alert "ctrl+d"</li>
+    <li>? => alert "?"</li>
+    <li>alt+y => redirect to yenmin.com</li>
+    <li>alt+g => redirect to google.co.in</li>
+  </ul>
+</div>
+<button (click)="btn_click()">Test Click<br>alt+ctrl+s</button>
+<div class="tab">
+  <button class="tablinks" (click)="openCity($event, 'London')" id="tab1">London</button>
+  <button class="tablinks" (click)="openCity($event, 'Paris')" id="tab2">Paris</button>
+  <button class="tablinks" (click)="openCity($event, 'Tokyo')" id="tab3">Tokyo</button>
+</div>
 
-<router-outlet></router-outlet>
+<div id="London" class="tabcontent">
+  <h3>London</h3>
+  <p>London is the capital city of England.</p>
+</div>
+
+<div id="Paris" class="tabcontent">
+  <h3>Paris</h3>
+  <p>Paris is the capital of France.</p> 
+</div>
+
+<div id="Tokyo" class="tabcontent">
+  <h3>Tokyo</h3>
+  <p>Tokyo is the capital of Japan.</p>
+</div>
